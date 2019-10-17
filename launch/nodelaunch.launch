@@ -1,0 +1,6 @@
+<launch>
+    <arg name="robotns" default="robot0"/>
+    <arg name="lidar" default="lidar1"/>
+    <node name="lab2_pkg_node" type="lab2_pkg_node" pkg="lab2_pkg" output="screen" ns="$(arg robotns)" args= "$(arg lidar)">
+    </node>
+</launch>

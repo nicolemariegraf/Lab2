@@ -1,0 +1,6 @@
+<launch>
+	<include file="$(find stdr_launchers)/launch/server_with_map_and_gui.launch"/>
+	<arg name= "robotns" default= "robot0"/>
+	<node pkg= "rqt_gui" type= "rqt_gui" name= "rqt_gui" ns= "$(arg robotns)" />
+    <include file="$(find lab2_pkg)/launch/nodelaunch.launch" pass_all_args="true"/>
+</launch>
