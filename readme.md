@@ -1,0 +1,1 @@
+To run this code use: roslaunch lab2_pkg stdrlaunch.launch
